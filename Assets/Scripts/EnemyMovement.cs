@@ -20,6 +20,9 @@ public class EnemyMovement : MonoBehaviour
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Player") {
             Vector2 jumpForce = new Vector2(xForce * xDirection, yForce);
             enemyRigidbody.AddForce(jumpForce);
+        } else if (collision.gameObject.tag == "ThrowingObject") {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 

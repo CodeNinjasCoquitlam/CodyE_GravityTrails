@@ -89,10 +89,10 @@ namespace DouglasAvila.CobraRobot.Scripts
         {
             _inputHorizontalMovementDirection = Input.GetAxisRaw("Horizontal");
             _inputJump = Input.GetButtonDown("Jump");
-            _inputRangeAttack = Input.GetKey(KeyCode.Period);
-            _inputMeleeAttack = Input.GetKeyDown(KeyCode.Comma);
-            _inputSimulateDamage = Input.GetKeyDown(KeyCode.RightShift);
-            _inputSimulateDefeat = Input.GetKeyDown(KeyCode.RightControl);
+            //_inputRangeAttack = Input.GetKey(KeyCode.Period);
+            //_inputMeleeAttack = Input.GetKeyDown(KeyCode.Comma);
+            //_inputSimulateDamage = Input.GetKeyDown(KeyCode.RightShift);
+            //_inputSimulateDefeat = Input.GetKeyDown(KeyCode.RightControl);
 
             // Buffer the attack input button.
             if (_inputMeleeAttack) _meleeAttackInputBufferTimer = maxMeleeAttackInputBuffer;
